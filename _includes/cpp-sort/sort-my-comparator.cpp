@@ -13,7 +13,7 @@ void disp(vector<int>& vec) {
 
 // 自作のソート関数
 // 5で割った余りの大小で比較
-bool less_mod5(const int& lhs, const int& rhs) {
+bool less_mod5(int lhs, int rhs) {
   if ((lhs - rhs) % 5 != 0)
     return lhs % 5 < rhs % 5;
   else // 5で割った余りが等しいなら普通に大小比較する
