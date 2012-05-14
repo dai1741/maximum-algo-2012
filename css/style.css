@@ -72,6 +72,13 @@ h3 {
   margin: 0.3em 0;
 }
 
+#post hr {
+  margin: 2em 1em;
+  border: 1px solid #ddd;
+  border-top-width: 0.3em;
+  border-radius: 0.2em;
+}
+
 #post pre, #post code {
   font-family: "Bitstream Vera Sans Mono", "Courier", "Consolas", monospace;
   border-radius: 0.3em;
@@ -118,10 +125,84 @@ a:visited {
   color: #905;
 }
 
-a:link:hover, a:visited:hover {
+a:link:hover,
+a:visited:hover {
   text-decoration: underline;
 }
 
 a:active {
   color: #f00;
+}
+
+a.anchor {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  
+  margin-left: -1.8em;
+  padding: .2em .3em .5em .5em;
+  width: 1em;
+  font-size: 80%;
+  color: #333;
+  visibility: hidden;
+}
+
+*:hover > a.anchor,
+a.anchor:hover {
+  text-decoration: none;
+  visibility: visible;
+}
+
+h1 a.anchor {
+  font-size: 50%;
+}
+
+h2 a.anchor {
+  font-size: 70%;
+}
+
+#post .contents-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  
+  max-width: 50%; /* for IE7 */
+  border: 1px solid #666;
+  padding: .1em .3em;
+  background-color: #fcfaf1;
+  opacity: .95;
+}
+
+#post .contents-menu > ul {
+  display: none;
+}
+#post .contents-menu:hover > ul {
+  display: block;
+}
+
+#post .contents-menu ul {
+  margin-left: 0;
+  padding-left: 1.3em;
+}
+
+#post .contents-menu ul li {
+  line-height: 1.5;
+  margin: .1em 0;
+  font-size: 95%;
+}
+#post .contents-menu > ul > li {
+  font-size: 100%;
+}
+
+#post .contents-menu a {
+  display: block;
+  color: #333;
+}
+
+#post .contents-menu-button {
+  width: 4em;
+  margin-left: auto;
+  font-size: 95%;
+  text-align: center;
 }
