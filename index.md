@@ -12,6 +12,8 @@ title: 目次
 目次
 ----
 
+完全な目次は[サークルWikiのページ](http://maximum.vc/wiki.cgi?page=%A5%A2%A5%EB%A5%B4%A5%EA%A5%BA%A5%E0%B9%D6%BD%AC%B2%F12012)にあります。
+
 {% for post in site.posts reversed %}
 - [{{ post.title }}]({{site.baseurl}}{{ post.url }})
 {% endfor %}
