@@ -7,7 +7,7 @@ typedef vector<vector<int> > Matrix;
 
 const int INF = 100000000;
 Matrix graph; // グラフの距離を格納した2次元配列（隣接行列）
-              // d[u][v]は辺e=(u,v)のコスト（辺が存在しない場合はINF、ただしd[i][i]=0）
+              // d[u][v]は辺e=(u,v)のコスト（辺が存在しない場合はINF）
 
 vector<int> dist; // 最短距離
 
