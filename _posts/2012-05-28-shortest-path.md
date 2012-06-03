@@ -30,6 +30,10 @@ title: 最短経路問題（ベルマンフォード法・ワーシャルフロ�
 {% include shortest-path/bellman-ford.txt %}
 {% endhighlight %}
 
+入力例に対応するグラフ：
+
+![グラフ]({{site.baseurl}}images/shortest-path/bellman-ford.png)
+
 出力例：
 
     0から1へのコスト: 2
@@ -59,6 +63,10 @@ title: 最短経路問題（ベルマンフォード法・ワーシャルフロ�
 {% highlight yaml %}
 {% include shortest-path/warshall-floyd.txt %}
 {% endhighlight %}
+
+入力例に対応するグラフ：
+
+![グラフ]({{site.baseurl}}images/shortest-path/warshall-floyd.png)
 
 出力例：
 
