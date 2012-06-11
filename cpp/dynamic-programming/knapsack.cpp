@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <string.h>
 using namespace std;
 
 const int MAX_N = 1000; // n‚ÌÅ‘å’l
