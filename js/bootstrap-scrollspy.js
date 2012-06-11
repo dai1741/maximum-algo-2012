@@ -56,7 +56,7 @@
           .map(function () {
             var $el = $(this)
               , href = $el.data('target') || $el.attr('href')
-              , $href = /^#\w/.test(href) && $(href)
+              , $href = /^#/.test(href) && $('[id="' + href.slice(1).replace('"', '\\"') + '"]')
             return ( $href
               && href.length
               && [[ $href.position().top, href ]] ) || null
@@ -101,8 +101,8 @@
           .removeClass('active')
 
         selector = this.selector
-          + '[data-target="' + target + '"],'
-          + this.selector + '[href="' + target + '"]'
+          + '[data-target="' + target.replace('"', '\\"') + '"],'
+          + this.selector + '[href="' + target.replace('"', '\\"') + '"]'
 
         active = $(selector)
           .parent('li')

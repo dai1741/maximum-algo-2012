@@ -39,7 +39,7 @@ $ ->
     
     $('<a/>').addClass('anchor').attr(
       name: anchorName
-      id: anchorName  # for IE7
+      id: anchorName
       href: "##{anchorName}"
     ).text('¶').prependTo elm
 
