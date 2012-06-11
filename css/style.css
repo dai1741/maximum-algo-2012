@@ -161,6 +161,7 @@ h2 a.anchor {
   font-size: 70%;
 }
 
+
 #post .contents-menu {
   position: fixed;
   top: 0;
@@ -174,20 +175,22 @@ h2 a.anchor {
   opacity: .95;
 }
 
+#post .contents-menu ul {
+  margin-left: 0;
+  padding-left: 1.1em;
+  list-style: none;
+}
+
 #post .contents-menu > ul {
   display: none;
+  padding-left: 0;
 }
 #post .contents-menu:hover > ul {
   display: block;
 }
 
-#post .contents-menu ul {
-  margin-left: 0;
-  padding-left: 1.3em;
-}
-
 #post .contents-menu ul li {
-  line-height: 1.5;
+  line-height: 1.3;
   margin: .1em 0;
   font-size: 95%;
 }
@@ -197,6 +200,7 @@ h2 a.anchor {
 
 #post .contents-menu a {
   display: block;
+  padding: .1em .3em;
   color: #333;
 }
 
@@ -205,6 +209,11 @@ h2 a.anchor {
   margin-left: auto;
   font-size: 95%;
   text-align: center;
+}
+
+#post .contents-menu li.active > a {
+  background-color: #369bd7;
+  color: #fff;
 }
 
 

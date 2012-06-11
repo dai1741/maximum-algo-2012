@@ -48,4 +48,6 @@ $ ->
 
   if heads.size() < MIN_HEAD_COUNT
     $('.contents-menu').remove()
+  
+  setTimeout(( -> $('body').scrollspy()), 1)
 
