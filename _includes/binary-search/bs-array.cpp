@@ -49,9 +49,9 @@ int main() {
   for (int i = 0; i < n; i++) vec[i] = i * 2;
 
   cout << binsearch_lower_bound(vec, 50) << endl;    // => 25
-  // cout << stl_binsearch_lower_bound(vec, 50) << endl; // => 25
+  cout << stl_binsearch_lower_bound(vec, 50) << endl; // => 25
   cout << binsearch_upper_bound(vec, 50) << endl;    // => 26
-  // cout << upper_bound(vec.begin(), vec.end(), 50) - vec.begin() << endl; // => 25
+  cout << stl_binsearch_upper_bound(vec, 50) << endl; // => 26
   
   cout << binsearch_lower_bound(vec, 76) << endl;    // => 38
   cout << binsearch_lower_bound(vec, 51) << endl;    // => 26
