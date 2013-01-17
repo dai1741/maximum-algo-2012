@@ -25,7 +25,7 @@ int term(string& s, int& i) {
   while(s[i] == '*' || s[i] == '/') {
     char op = s[i];
     i++;
-    int val2 = term(s, i);
+    int val2 = factor(s, i);
     if (op == '*') val *= val2;
     else val /= val2;
   }
