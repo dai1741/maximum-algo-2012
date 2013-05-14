@@ -21,7 +21,7 @@ title: 二分探索
 {% include binary-search/bs-array.cpp %}
 {% endhighlight %}
 
-上記コードでも記載していますが、配列（というより[イテレータ](../cpp2/#イテレータ)）に対する二分探索にはSTLの
+上記コードでも記載していますが、配列（正確には[イテレータ](../cpp2/#イテレータ)）に対する二分探索にはSTLの
 [algorithmヘッダ](../cpp2/#algorithm)にある[lower_bound関数](http://www.cplusplus.com/reference/algorithm/lower_bound/)や
 [upper_bound関数](http://www.cplusplus.com/reference/algorithm/upper_bound/)も使えます。
 
