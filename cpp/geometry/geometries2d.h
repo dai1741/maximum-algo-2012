@@ -155,7 +155,7 @@ VP crosspointCC(P a, D ar, P b, D br) {
   P ab = b-a;
   D d = abs(ab);
   D crL = (norm(ab) + ar*ar - br*br) / (2*d);
-  if (EQ(d, 0) || ar < crL) return ps;
+  if (EQ(d, 0) || ar < abs(crL)) return ps;
 
   P abN = ab * P(0, sqrt(ar*ar - crL*crL) / d);
   P cp = a + crL/d * ab;
